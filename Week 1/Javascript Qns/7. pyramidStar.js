@@ -1,6 +1,6 @@
 function pyramidStar(n) {
     let str = "";
-    for (let i = 2; i <= n; i++) {
+    for (let i = 1; i <= n; i++) {
         for (j = 1; j <= n - i; j++) {
             str += " ";
         }
@@ -12,4 +12,4 @@ function pyramidStar(n) {
     console.log(str);
 }
 
-pyramidStar(3);
+pyramidStar(5);
