@@ -18,4 +18,4 @@ function promptInput(callback) {
     
 }
 
-promptInput(greeting);
+promptInput(greeting); // greeting is a callback function
