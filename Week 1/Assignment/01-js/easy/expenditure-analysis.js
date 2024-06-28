@@ -9,8 +9,16 @@
 */
 
 function calculateTotalSpentByCategory(transactions) {
-  let ans = [{category, price}];
-  return [];
+  for (let i = 0; i < transactions.length; i++) {
+    let category = transactions[i].category;
+    let total = 0;
+    for (let j = 0; j < transactions.length; j++) {
+      if (category === transactions[j].category) {
+        total += transactions[j].price;
+      }
+    }
+    transactions[i] = { category: total };
+  }
 }
 
 const transactions = [
