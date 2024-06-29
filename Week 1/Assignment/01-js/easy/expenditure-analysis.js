@@ -17,7 +17,7 @@ function calculateTotalSpentByCategory(transactions) {
         total += transactions[j].price;
       }
     }
-    transactions[i] = { category: total };
+    transactions[i] = { category: total};
   }
 }
 
